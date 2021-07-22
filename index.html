@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Folder View</title>
+</head>
+<body>
+    <aside>
+        <ul>
+            <li><a href=""><img src="./assets/home.svg" alt=""><br/>Home</a></li>
+            <li class="tab-active"><a href=""><img src="./assets/folder-Selected.svg" alt=""><br/>Org Folders</a></li>
+        </ul>
+    </aside>
+    <header>
+        <a href="" class="logo"><img src="./assets/logo.svg" alt=""></a>
+        <nav>
+            <div class="search-wrapper">
+                <span>
+                    <img src="./assets/search.svg" alt="">
+                </span>
+                <input type="text" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="profile-wrapper">
+                <a href=""><img src="./assets/cog.svg" alt=""></a>
+                <a href=""><img src="./assets/bell.svg" alt=""></a>
+                <a href=""><img src="./assets/profile_picture.svg" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="folder-heading">
+            <span>Org Folders</span>
+            <span><img src="./assets/Vector_78.svg" alt=""></span>
+            <span>Jan 2021</span>
+        </div>
+
+        <div class="folder-box">
+            <div class="folder">
+                <div class="line1">
+                    <span><img src="./assets/Folder.svg" alt=""></span>
+                    <span class="folder-name">Folder 1</span>
+                    <span class="folder-size">(235)</span>
+                </div>
+                <div class="line2">
+                    <span><img src="./assets/heart_filled.svg" alt=""></span>
+                    <span class="folder-info">
+                        <span class="folder-details" id="myBtn">
+                            <img src="./assets/info.svg" alt="">
+                        </span>
+                        <img src="./assets/3_dot.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="folder">
+                <div class="line1">
+                    <span><img src="./assets/Folder.svg" alt=""></span>
+                    <span class="folder-name">Folder 2</span>
+                    <span class="folder-size">(235)</span>
+                </div>
+                <div class="line2">
+                    <span><img src="./assets/heart_filled.svg" alt=""></span>
+                    <span class="folder-info">
+                        <img src="./assets/info.svg" alt="">
+                        <img src="./assets/3_dot.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="folder">
+                <div class="line1">
+                    <span><img src="./assets/Folder.svg" alt=""></span>
+                    <span class="folder-name">Folder 3</span>
+                    <span class="folder-size">(235)</span>
+                </div>
+                <div class="line2">
+                    <span><img src="./assets/heart_filled.svg" alt=""></span>
+                    <span class="folder-info">
+                        <img src="./assets/info.svg" alt="">
+                        <img src="./assets/3_dot.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="folder">
+                <div class="line1">
+                    <span><img src="./assets/Folder.svg" alt=""></span>
+                    <span class="folder-name">Folder 4</span>
+                    <span class="folder-size">(235)</span>
+                </div>
+                <div class="line2">
+                    <span><img src="./assets/heart_filled.svg" alt=""></span>
+                    <span class="folder-info">
+                        <img src="./assets/info.svg" alt="">
+                        <img src="./assets/3_dot.svg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modal -->
+
+    <div class="modal-container" id="myModal">
+        <div class="modal-header">
+            <div class="folder-icon">
+                <span><img src="./assets/folder.svg" alt=""></span>
+                <span class="modal-name">Folder 1</span>
+            </div>
+
+            <div class="folder-close">
+                <span class="close">
+                    <img class="close-icon" src="./assets/cross.svg" alt="">
+                </span>
+            </div>
+
+        </div>
+
+        <div class="modal-body">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Details')" id="defaultOpen">Details</button>
+                <button class="tablinks" onclick="openTab(event, 'Comments')">Comments</button>
+            </div>
+              
+            <div id="Details" class="tabcontent">
+                <table class="table-detail">
+                    <tr>
+                        <td>Type</td>
+                        <td>Org Folder</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>Org Folder/ Jan 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Owner</td>
+                        <td>Aditya RM</td>
+                    </tr>
+                    <tr>
+                        <td>Openned at</td>
+                        <td>June 23, 2021</td>
+                    </tr>
+                    <tr>
+                        <td>Created at</td>
+                        <td>May 26, 2021</td>
+                    </tr>
+
+                </table>
+            </div>
+              
+            <div id="Comments" class="tabcontent">
+
+                        <div class="comment-container">
+                            <div class="user">
+                                <div class="user-image">
+                                    <img class="dp-image" src="./assets/profile_picture.svg" alt="">
+                                    <img class="msg-icon" src="./assets/comment.svg" alt="">
+                                </div>
+                                
+                                <div class="user-details">
+                                    <span class="user-name">Eduardo Benz</span>
+                                    <small>3 mins ago</small>
+                                </div>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        
+                        <div class="comment-container">
+                            <div class="user">
+                                <div class="user-image">
+                                    <img class="dp-image" src="./assets/profile_picture.svg" alt="">
+                                    <img class="msg-icon" src="./assets/comment.svg" alt="">
+                                </div>
+                                
+                                <div class="user-details">
+                                    <span class="user-name">Eduardo Benz</span>
+                                    <small>3 mins ago</small>
+                                </div>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+
+                        
+                    <div class="bottom-align">
+                        <div class="text-area">
+                            <textarea name="comment" cols="30" rows="10"></textarea>
+                        </div>
+        
+                        <div class="buttons">
+                            <button class="btn-cancel">Cancel</button>
+                            <button class="btn-blue">Comment</button>
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+              
+    </div>
+
+    </main>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
